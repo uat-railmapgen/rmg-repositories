@@ -1,0 +1,1 @@
+echo ${github.event.inputs.version}

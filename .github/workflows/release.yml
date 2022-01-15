@@ -25,6 +25,8 @@ jobs:
         run: |
           git config --global user.name "RMG Release Agent"
           git config --global user.email rmg.release.agent@users.noreply.github.com
+          chmod +x ./release.sh
+          ./release.sh
 
       - name: Release to UAT
         if: ${{ github.event.inputs.environment == 'UAT' }}
@@ -39,6 +41,7 @@ jobs:
           cd rmg-palette
           git add .
           git commit -m "Release version ${{ github.event.inputs.version }} to UAT"
+          git push --set-upstream origin gh-pages
           git push
 
       - name: Release to PRD on GitHub Pages
