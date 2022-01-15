@@ -48,5 +48,4 @@ jobs:
           cd TARGET_REPO
           git add .
           git commit -m "Release version ${{ github.event.inputs.version }} to ${{ github.event.inputs.environment }}"
-          git push --set-upstream origin gh-pages
-          git push
+          git push -u origin gh-pages
