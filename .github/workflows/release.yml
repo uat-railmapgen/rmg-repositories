@@ -1,0 +1,53 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      app_name:
+        description: App
+        required: true
+      version:
+        description: Version
+        required: true
+      environment:
+        description: Environment (UAT/PRD)
+        default: UAT
+        required: true
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "RMG Release Agent"
+          git config --global user.email rmg.release.agent@users.noreply.github.com
+
+      - name: Release to UAT
+        if: ${{ github.event.inputs.environment == 'UAT' }}
+        run: |
+          cd ..
+          git clone --depth 1 https://wongchito:${{ secrets.RMG_BUILD_AND_RELEASE }}@github.com/uat-railmapgen/rmg-palette.git
+          cd ${{ github.event.inputs.app_name }}
+          {git checkout gh-pages || git checkout -b gh-pages}
+          cd ..
+          rm -rf ${{ github.event.inputs.app_name }}/*
+          cp -r ./rmg-repositories/rmg-palette/${{ github.event.inputs.version }}/ rmg-palette/
+          cd rmg-palette
+          git add .
+          git commit -m "Release version ${{ github.event.inputs.version }} to UAT"
+          git push
+
+      - name: Release to PRD on GitHub Pages
+        if: ${{ github.event.inputs.environment == 'PRD' }}
+        run: |
+          git clone --single-branch --branch gh-pages --depth 1 https://wongchito:${{ secrets.RMG_BUILD_AND_RELEASE }}@github.com/railmapgen/rmg-palette.git
+          rm -rf rmg-palette/*
+          cp -r ../rmg-repositories/rmg-palette/${{ github.event.inputs.version }}/ rmg-palette/
+          cd rmg-palette
+          git add .
+          git commit -m "Release version ${{ github.event.inputs.version }} to PRD"
+          git push
