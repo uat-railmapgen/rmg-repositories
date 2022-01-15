@@ -1,1 +1,1 @@
-echo ${github.event.inputs.version}
+echo $GITHUB_CONTEXT
