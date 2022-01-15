@@ -44,7 +44,7 @@ jobs:
           {git checkout gh-pages || git checkout -b gh-pages}
           cd ..
           rm -rf TARGET_REPO/*
-          cp -r ./rmg-repositories/${{ github.event.inputs.app_name }}/${{ github.event.inputs.version }}/ TARGET_REPO/
+          cp -r ./${{ github.event.inputs.app_name }}/${{ github.event.inputs.version }}/ TARGET_REPO/
           cd TARGET_REPO
           git add .
           git commit -m "Release version ${{ github.event.inputs.version }} to ${{ github.event.inputs.environment }}"
