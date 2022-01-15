@@ -7,7 +7,7 @@ echo "Environment: $3"
 
 # Checkout to gh-pages branch
 cd TARGET_REPO/
-{ git checkout gh-pages || git checkout -b gh-pages }
+{ git checkout gh-pages } || { git checkout -b gh-pages }
 
 # Clear folder
 cd ..
