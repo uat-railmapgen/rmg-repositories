@@ -39,4 +39,4 @@ jobs:
       - name: Release
         run: |
           chmod +x ./release.sh
-          ./release.sh
+          ./release.sh ${{ github.event.inputs.app_name }} ${{ github.event.inputs.version }} ${{ github.event.inputs.environment }}
