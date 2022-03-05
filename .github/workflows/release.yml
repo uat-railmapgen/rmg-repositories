@@ -29,12 +29,12 @@ jobs:
       - name: Prepare UAT repo
         if: ${{ github.event.inputs.environment == 'UAT' }}
         run: |
-          git clone https://wongchito:${{ secrets.RMG_BUILD_AND_RELEASE }}@github.com/uat-railmapgen/rmg-palette.git TARGET_REPO/
+          git clone https://wongchito:${{ secrets.RMG_BUILD_AND_RELEASE }}@github.com/uat-railmapgen/${{ github.event.inputs.app_name }}.git TARGET_REPO/
 
       - name: Prepare PRD repo
         if: ${{ github.event.inputs.environment == 'PRD' }}
         run: |
-          git clone https://wongchito:${{ secrets.RMG_BUILD_AND_RELEASE }}@github.com/railmapgen/rmg-palette.git TARGET_REPO/
+          git clone https://wongchito:${{ secrets.RMG_BUILD_AND_RELEASE }}@github.com/railmapgen/${{ github.event.inputs.app_name }}.git TARGET_REPO/
 
       - name: Release
         run: |
