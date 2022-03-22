@@ -17,11 +17,11 @@ rm -rf TARGET_REPO/*
 cp -r ./"$1"/"$2"/* TARGET_REPO/
 
 ### WRITE INFO.JSON
-cat >>TARGET_REPO/info.json <<EOF
+cat >TARGET_REPO/info.json <<EOF
 {
   "component": "$1",
   "version": "$2",
-  "environment: "$3"
+  "environment": "$3"
 }
 EOF
 
