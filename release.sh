@@ -16,6 +16,15 @@ rm -rf TARGET_REPO/*
 # Copy artifacts
 cp -r ./"$1"/"$2"/* TARGET_REPO/
 
+### WRITE INFO.JSON
+cat >>TARGET_REPO/info.json <<EOF
+{
+  "component": "$1",
+  "version": "$2",
+  "environment: "$3",
+}
+EOF
+
 # Push
 cd TARGET_REPO
 git add .
