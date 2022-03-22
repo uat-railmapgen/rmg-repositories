@@ -29,7 +29,12 @@ jobs:
       - name: Prepare UAT repo
         if: ${{ github.event.inputs.environment == 'UAT' }}
         run: |
-          git clone https://wongchito:${{ secrets.RMG_BUILD_AND_RELEASE }}@github.com/uat-railmapgen/${{ github.event.inputs.app_name }}.git TARGET_REPO/
+          if [ ${{ github.event.inputs.app_name }} == 'railmapgen.github.io' ]
+          then
+            git clone https://wongchito:${{ secrets.RMG_BUILD_AND_RELEASE }}@github.com/uat-railmapgen/uat-railmapgen.github.io.git TARGET_REPO/
+          else
+            git clone https://wongchito:${{ secrets.RMG_BUILD_AND_RELEASE }}@github.com/uat-railmapgen/${{ github.event.inputs.app_name }}.git TARGET_REPO/
+          fi
 
       - name: Prepare PRD repo
         if: ${{ github.event.inputs.environment == 'PRD' }}
