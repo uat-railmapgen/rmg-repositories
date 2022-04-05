@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/seed-project/static/js/main.f5ce432f.js",
+    "index.html": "/seed-project/index.html",
+    "main.f5ce432f.js.map": "/seed-project/static/js/main.f5ce432f.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.f5ce432f.js"
+  ]
+}
