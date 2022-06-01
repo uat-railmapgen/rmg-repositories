@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/seed-project/static/css/main.186d89f0.css",
+    "main.js": "/seed-project/static/js/main.d0d75c8c.js",
+    "index.html": "/seed-project/index.html",
+    "main.186d89f0.css.map": "/seed-project/static/css/main.186d89f0.css.map",
+    "main.d0d75c8c.js.map": "/seed-project/static/js/main.d0d75c8c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.186d89f0.css",
+    "static/js/main.d0d75c8c.js"
+  ]
+}
