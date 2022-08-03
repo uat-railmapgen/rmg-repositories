@@ -21,7 +21,8 @@ cat >TARGET_REPO/info.json <<EOF
 {
   "component": "$1",
   "version": "$2",
-  "environment": "$3"
+  "environment: "$3",
+  "instance": "GitHub"
 }
 EOF
 
