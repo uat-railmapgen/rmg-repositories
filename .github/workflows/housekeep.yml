@@ -1,0 +1,21 @@
+name: Housekeep
+
+on:
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Configure Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Housekeep
+        run: |
+          chmod +x ./housekeep.sh
+          ./housekeep.sh
