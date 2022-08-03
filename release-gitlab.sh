@@ -8,7 +8,6 @@ echo "Version: $2"
 cd GITLAB_REPO/
 
 # Clear artefact folder
-rm -rf build
 rm -rf public
 mkdir public
 
