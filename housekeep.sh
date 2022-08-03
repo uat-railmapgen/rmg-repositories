@@ -96,5 +96,5 @@ done
 
 # Push
 git add .
-git commit -m "rmg housekeeping at $date"
+git commit -m "rmg housekeeping at $(date)"
 git push
