@@ -9,6 +9,7 @@ cd GITLAB_REPO/
 
 # Clear artefact folder
 rm -rf build
+mkdir build
 
 # Copy artifacts
 cp -r ../"$1"/"$2"/* build/
