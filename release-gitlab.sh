@@ -26,5 +26,5 @@ EOF
 
 # Push
 git add .
-git commit -m "Release version $2 to $3"
-git push -u origin gh-pages
+git commit -m "Release version $2 to GitLab"
+git push
