@@ -19,7 +19,7 @@ cat >public/info.json <<EOF
 {
   "component": "$1",
   "version": "$2",
-  "environment: "PRD",
+  "environment": "PRD",
   "instance": "GitLab"
 }
 EOF
