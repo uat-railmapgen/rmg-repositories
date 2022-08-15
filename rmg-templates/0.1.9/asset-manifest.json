@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rmg-templates/static/css/main.5a683ca6.css",
+    "main.js": "/rmg-templates/static/js/main.9bf8b60b.js",
+    "index.html": "/rmg-templates/index.html",
+    "main.5a683ca6.css.map": "/rmg-templates/static/css/main.5a683ca6.css.map",
+    "main.9bf8b60b.js.map": "/rmg-templates/static/js/main.9bf8b60b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a683ca6.css",
+    "static/js/main.9bf8b60b.js"
+  ]
+}
