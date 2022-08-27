@@ -32,7 +32,12 @@ jobs:
 
       - name: Prepare PRD repo
         run: |
-          git clone https://chitowong:${{ secrets.GITLAB_RELEASE }}@gitlab.com/railmapgen/${{ github.event.inputs.app_name }}.git GITLAB_REPO/
+          if [ ${{ github.event.inputs.app_name }} == 'railmapgen.github.io' ]
+          then
+            git clone https://chitowong:${{ secrets.GITLAB_RELEASE }}@gitlab.com/railmapgen/railmapgen.gitlab.io.git GITLAB_REPO/
+          else
+            git clone https://chitowong:${{ secrets.GITLAB_RELEASE }}@gitlab.com/railmapgen/${{ github.event.inputs.app_name }}.git GITLAB_REPO/
+          fi
 
       - name: Release
         run: |
