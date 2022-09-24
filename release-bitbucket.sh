@@ -7,16 +7,18 @@ echo "Version: $2"
 # cd to working directory
 cd BITBUCKET_REPO/
 
-# Clear artefact folder
 if [ "$1" != "railmapgen.github.io" ]
 then
+  # Clear artefact folder
   rm -rf $1/
   mkdir $1/
-  cd $1/
-fi
 
-# Copy artifacts
-cp -r ../"$1"/"$2"/* .
+  # Copy artifacts
+  cp -r ../"$1"/"$2"/* $1/
+else
+  # Copy artifacts
+  cp -r ../"$1"/"$2"/* .
+fi
 
 ### WRITE INFO.JSON
 cat >./info.json <<EOF
