@@ -12,9 +12,10 @@ then
   # Clear artefact folder
   rm -rf $1/
   mkdir $1/
+  cd $1/
 
   # Copy artifacts
-  cp -r ../"$1"/"$2"/* $1/
+  cp -r ../../"$1"/"$2"/* .
 else
   # Copy artifacts
   cp -r ../"$1"/"$2"/* .
