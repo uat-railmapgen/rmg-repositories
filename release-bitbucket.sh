@@ -1,0 +1,34 @@
+#!/bin/bash
+set -eux
+
+echo "App name: $1"
+echo "Version: $2"
+
+# cd to working directory
+cd BITBUCKET_REPO/
+
+# Clear artefact folder
+if [ "$1" != "railmapgen.github.io" ]
+then
+  rm -rf $1/
+  mkdir $1/
+  cd $1/
+fi
+
+# Copy artifacts
+cp -r ../"$1"/"$2"/* .
+
+### WRITE INFO.JSON
+cat >./info.json <<EOF
+{
+  "component": "$1",
+  "version": "$2",
+  "environment": "PRD",
+  "instance": "Bitbucket"
+}
+EOF
+
+# Push
+git add .
+git commit -m "Release version $2 to Bitbucket"
+git push
