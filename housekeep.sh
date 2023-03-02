@@ -3,19 +3,13 @@ set -eux
 
 # ls | sort -V
 
-app="rmg-templates"
+app="rmg-components"
 versionList=(
-0.1.1
-0.1.2
-0.1.3
-0.1.4
-0.1.5
-0.1.6
-0.1.7
-0.1.9
-0.1.10
-0.1.12
-0.2.0
+6.0.0
+6.0.1
+6.1.0
+6.1.1
+6.1.2
 )
 
 for version in ${versionList[*]}
