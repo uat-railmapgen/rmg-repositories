@@ -16,6 +16,9 @@ rm -rf TARGET_REPO/*
 # Copy artifacts
 cp -r ./"$1"/"$2"/* TARGET_REPO/
 
+### BYPASS JEKYLL
+touch .nojekyll
+
 ### WRITE INFO.JSON
 cat >TARGET_REPO/info.json <<EOF
 {
