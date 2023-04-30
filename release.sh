@@ -17,7 +17,7 @@ rm -rf TARGET_REPO/*
 cp -r ./"$1"/"$2"/* TARGET_REPO/
 
 ### BYPASS JEKYLL
-touch .nojekyll
+touch TARGET_REPO/.nojekyll
 
 ### WRITE INFO.JSON
 cat >TARGET_REPO/info.json <<EOF
