@@ -24,6 +24,19 @@ cat >public/info.json <<EOF
 }
 EOF
 
+### WRITE .gitlab-ci.yml
+cat >.gitlab-ci.yml <<EOF
+pages:
+  stage: deploy
+  script:
+    - echo "Do nothing"
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
+EOF
+
 # Push
 git add .
 git commit -m "Release version $2 to GitLab"
