@@ -21,8 +21,11 @@ on:
         description: Version
         required: true
       environment:
+        type: choice
         description: Environment (UAT/PRD)
-        default: UAT
+        options:
+          - PRD
+          - UAT
         required: true
 
 jobs:
