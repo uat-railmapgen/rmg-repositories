@@ -1,0 +1,609 @@
+{
+    "svgWidth": {
+        "destination": 1500,
+        "runin": 1200,
+        "railmap": 1500,
+        "indoor": 4000
+    },
+    "svg_height": 300,
+    "style": "shmetro",
+    "y_pc": 40,
+    "padding": 8,
+    "direction": "l",
+    "platform_num": "",
+    "theme": [
+        "beijing",
+        "bj24yz",
+        "#e40077",
+        "#fff"
+    ],
+    "line_name": [
+        "亦庄线",
+        "Yizhuang Line"
+    ],
+    "current_stn_idx": "NrI7z9",
+    "stn_list": {
+        "linestart": {
+            "name": [
+                "RIGHT END",
+                "RIGHT END"
+            ],
+            "secondaryName": false,
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [],
+            "children": [
+                "MyUI3x"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "info": [
+                    []
+                ],
+                "tick_direc": "r",
+                "paid_area": true,
+                "osi_names": []
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 225
+        },
+        "NrI7z9": {
+            "name": [
+                "宋家庄",
+                "Songjiazhuang"
+            ],
+            "secondaryName": false,
+            "num": "01",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "Uo1cC5"
+            ],
+            "children": [
+                "lineend"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "info": [
+                    [
+                        [
+                            "beijing",
+                            "bj5",
+                            "#a6217f",
+                            "#fff",
+                            "5号线",
+                            "Line 5"
+                        ],
+                        [
+                            "beijing",
+                            "bj10",
+                            "#009bc0",
+                            "#fff",
+                            "10号线",
+                            "Line 10"
+                        ]
+                    ]
+                ],
+                "tick_direc": "r",
+                "paid_area": true,
+                "osi_names": []
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 110
+        },
+        "lineend": {
+            "name": [
+                "LEFT END",
+                "LEFT END"
+            ],
+            "secondaryName": false,
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "NrI7z9"
+            ],
+            "children": [],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "info": [
+                    []
+                ],
+                "tick_direc": "r",
+                "paid_area": true,
+                "osi_names": []
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 225
+        },
+        "Uo1cC5": {
+            "name": [
+                "肖村",
+                "Xiaocun"
+            ],
+            "secondaryName": false,
+            "num": "02",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "fL5ELd"
+            ],
+            "children": [
+                "NrI7z9"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "info": [
+                    []
+                ],
+                "tick_direc": "r",
+                "paid_area": true,
+                "osi_names": []
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 225
+        },
+        "fL5ELd": {
+            "name": [
+                "小红门",
+                "Xiaohong Men"
+            ],
+            "secondaryName": false,
+            "num": "03",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "TXllBz"
+            ],
+            "children": [
+                "Uo1cC5"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "info": [
+                    []
+                ],
+                "tick_direc": "r",
+                "paid_area": true,
+                "osi_names": []
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 225
+        },
+        "TXllBz": {
+            "name": [
+                "旧宫",
+                "Jiu Gong"
+            ],
+            "secondaryName": false,
+            "num": "04",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "3IdAxn"
+            ],
+            "children": [
+                "fL5ELd"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "info": [
+                    []
+                ],
+                "tick_direc": "r",
+                "paid_area": true,
+                "osi_names": []
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 225
+        },
+        "3IdAxn": {
+            "name": [
+                "亦庄桥",
+                "Yizhuang Qiao"
+            ],
+            "secondaryName": false,
+            "num": "05",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "1ZAR1w"
+            ],
+            "children": [
+                "TXllBz"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "info": [
+                    []
+                ],
+                "tick_direc": "r",
+                "paid_area": true,
+                "osi_names": []
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 225
+        },
+        "1ZAR1w": {
+            "name": [
+                "亦庄文化园",
+                "Yizhuang Culture Park"
+            ],
+            "secondaryName": false,
+            "num": "06",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "X7xIQ7"
+            ],
+            "children": [
+                "3IdAxn"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "info": [
+                    []
+                ],
+                "tick_direc": "r",
+                "paid_area": true,
+                "osi_names": []
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 225
+        },
+        "X7xIQ7": {
+            "name": [
+                "万源街",
+                "Wanyuan Jie"
+            ],
+            "secondaryName": false,
+            "num": "07",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "XxEVt6"
+            ],
+            "children": [
+                "1ZAR1w"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "info": [
+                    []
+                ],
+                "tick_direc": "r",
+                "paid_area": true,
+                "osi_names": []
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 225
+        },
+        "XxEVt6": {
+            "name": [
+                "荣京东街",
+                "Rongjing Dongjie"
+            ],
+            "secondaryName": false,
+            "num": "08",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "Yg90LL"
+            ],
+            "children": [
+                "X7xIQ7"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "info": [
+                    []
+                ],
+                "tick_direc": "r",
+                "paid_area": true,
+                "osi_names": []
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 225
+        },
+        "Yg90LL": {
+            "name": [
+                "荣昌东街",
+                "Rongchang Dongjie"
+            ],
+            "secondaryName": false,
+            "num": "09",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "nFNHHQ"
+            ],
+            "children": [
+                "XxEVt6"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "info": [
+                    [
+                        [
+                            "beijing",
+                            "btt1",
+                            "#e5061b",
+                            "#fff",
+                            "亦庄T1线",
+                            "YIzhuang T1 Line"
+                        ]
+                    ],
+                    []
+                ],
+                "tick_direc": "r",
+                "paid_area": true,
+                "osi_names": []
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 230
+        },
+        "nFNHHQ": {
+            "name": [
+                "同济南路",
+                "Tongji Nanlu"
+            ],
+            "secondaryName": false,
+            "num": "10",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "JxlZRq"
+            ],
+            "children": [
+                "Yg90LL"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "info": [
+                    []
+                ],
+                "tick_direc": "r",
+                "paid_area": true,
+                "osi_names": []
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 225
+        },
+        "JxlZRq": {
+            "name": [
+                "经海路",
+                "Jinghai Lu"
+            ],
+            "secondaryName": false,
+            "num": "11",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "TWb_3d"
+            ],
+            "children": [
+                "nFNHHQ"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "info": [
+                    []
+                ],
+                "tick_direc": "r",
+                "paid_area": true,
+                "osi_names": []
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 225
+        },
+        "TWb_3d": {
+            "name": [
+                "次渠南",
+                "Ciqu Nan (S)"
+            ],
+            "secondaryName": false,
+            "num": "12",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "fixqPQ"
+            ],
+            "children": [
+                "JxlZRq"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "info": [
+                    []
+                ],
+                "tick_direc": "r",
+                "paid_area": true,
+                "osi_names": []
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 225
+        },
+        "fixqPQ": {
+            "name": [
+                "次渠",
+                "Ciqu"
+            ],
+            "secondaryName": false,
+            "num": "13",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "MyUI3x"
+            ],
+            "children": [
+                "TWb_3d"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "info": [
+                    [
+                        [
+                            "beijing",
+                            "bj17",
+                            "#00A9A9",
+                            "#fff",
+                            "17号线",
+                            "Line 17"
+                        ]
+                    ]
+                ],
+                "tick_direc": "r",
+                "paid_area": true,
+                "osi_names": []
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 225
+        },
+        "MyUI3x": {
+            "name": [
+                "亦庄火车站",
+                "Yizhuang Railway Station"
+            ],
+            "secondaryName": false,
+            "num": "14",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "linestart"
+            ],
+            "children": [
+                "fixqPQ"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "info": [
+                    []
+                ],
+                "tick_direc": "r",
+                "paid_area": true,
+                "osi_names": []
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 225
+        }
+    },
+    "namePosMTR": {
+        "isStagger": true,
+        "isFlip": true
+    },
+    "customiseMTRDest": {
+        "isLegacy": false,
+        "terminal": false
+    },
+    "line_num": "24",
+    "psd_num": "12",
+    "info_panel_type": "sh2020",
+    "notesGZMTR": [],
+    "direction_gz_x": 3.666667,
+    "direction_gz_y": 79.666667,
+    "coline": {},
+    "loop": false,
+    "loop_info": {
+        "bank": true,
+        "left_and_right_factor": 1,
+        "bottom_factor": 1
+    },
+    "branchSpacingPct": 40
+}
