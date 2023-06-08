@@ -1,0 +1,191 @@
+{
+    "beijing": {
+        "contributors": [
+            "59787082"
+        ],
+        "name": {
+            "en": "Beijing",
+            "zh-CN": "北京",
+            "zh-Hans": "北京",
+            "zh-Hant": "北京",
+            "fr": "Pékin",
+            "ja": "北京",
+            "ko": "베이징"
+        },
+        "lastUpdateOn": 1683810518708
+    },
+    "brisbane": {
+        "contributors": [
+            "134931870"
+        ],
+        "name": {
+            "en": "Brisbane",
+            "zh-CN": "布里斯班"
+        },
+        "lastUpdateOn": 1685715126839
+    },
+    "brussels": {
+        "contributors": [
+            "92020676"
+        ],
+        "name": {
+            "en": "Brussels",
+            "fr": "Bruxelles",
+            "zh-Hans": "布鲁塞尔",
+            "zh-TW": "布魯塞爾"
+        },
+        "lastUpdateOn": 1683810518708
+    },
+    "changchun": {
+        "contributors": [
+            "59787082"
+        ],
+        "name": {
+            "en": "Changchun",
+            "zh-CN": "长春"
+        },
+        "lastUpdateOn": 1683969288399
+    },
+    "changsha": {
+        "contributors": [
+            "99594702"
+        ],
+        "name": {
+            "en": "Changsha",
+            "zh-Hans": "长沙"
+        },
+        "lastUpdateOn": 1684245327649
+    },
+    "changzhou": {
+        "contributors": [
+            "123239445"
+        ],
+        "name": {
+            "en": "Changzhou",
+            "ko": "창저우",
+            "zh-Hans": "常州",
+            "zh-Hant": "常州"
+        },
+        "lastUpdateOn": 1684070526793
+    },
+    "chengdu": {
+        "contributors": [
+            "123239445"
+        ],
+        "name": {
+            "en": "Chengdu",
+            "ko": "청두",
+            "zh-Hans": "成都",
+            "zh-Hant": "成都"
+        },
+        "lastUpdateOn": 1684666268937
+    },
+    "chongqing": {
+        "contributors": [
+            "123074394"
+        ],
+        "name": {
+            "en": "Chongqing",
+            "zh-CN": "重庆",
+            "zh-HK": "重慶"
+        },
+        "lastUpdateOn": 1684158673359
+    },
+    "foshan": {
+        "contributors": [
+            "123239445"
+        ],
+        "name": {
+            "en": "Foshan",
+            "ko": "포산",
+            "zh-Hans": "佛山",
+            "zh-Hant": "佛山",
+            "ja": "仏山"
+        },
+        "lastUpdateOn": 1686130090704
+    },
+    "guiyang": {
+        "contributors": [
+            "123074394"
+        ],
+        "name": {
+            "en": "Guiyang",
+            "zh-CN": "贵阳",
+            "zh-HK": "贵阳"
+        },
+        "lastUpdateOn": 1686046685148
+    },
+    "hongkong": {
+        "contributors": [
+            "123239445"
+        ],
+        "name": {
+            "en": "Hong Kong",
+            "zh-Hans": "香港",
+            "zh-Hant": "香港",
+            "ko": "홍콩"
+        },
+        "lastUpdateOn": 1683810518708
+    },
+    "kunming": {
+        "contributors": [
+            "98044618"
+        ],
+        "name": {
+            "zh-CN": "昆明",
+            "zh-HK": "昆明",
+            "zh-TW": "昆明",
+            "en": "Kunming",
+            "ko": "쿤밍시"
+        },
+        "lastUpdateOn": 1684570408266
+    },
+    "shanghai": {
+        "contributors": [
+            "3353040"
+        ],
+        "name": {
+            "en": "Shanghai",
+            "zh-Hans": "上海",
+            "zh-Hant": "上海",
+            "ja": "上海",
+            "ko": "상해"
+        },
+        "lastUpdateOn": 1685190302201
+    },
+    "shenyang": {
+        "contributors": [
+            "59787082"
+        ],
+        "name": {
+            "en": "Shenyang",
+            "zh-CN": "沈阳"
+        },
+        "lastUpdateOn": 1684570944698
+    },
+    "toronto": {
+        "contributors": [
+            "98044618"
+        ],
+        "name": {
+            "en": "Toronto",
+            "fr": "Toronto",
+            "zh-CN": "多伦多",
+            "zh-HK": "多倫多",
+            "zh-TW": "多倫多",
+            "ko": "토론토"
+        },
+        "lastUpdateOn": 1684570711856
+    },
+    "wuxi": {
+        "contributors": [
+            "92020676"
+        ],
+        "name": {
+            "en": "Wuxi",
+            "zh-Hans": "无锡",
+            "zh-Hant": "無錫"
+        },
+        "lastUpdateOn": 1684657421515
+    }
+}
