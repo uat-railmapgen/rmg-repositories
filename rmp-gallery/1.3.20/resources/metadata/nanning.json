@@ -1,0 +1,25 @@
+{
+    "name": {
+        "zh-CN": "南宁",
+        "zh-Hant": "南寧",
+        "en": "Nanning"
+    },
+    "desc": {
+        "en": ""
+    },
+    "reference": "http://www.nngdjt.com/html/service/",
+    "updateHistory": [
+        {
+            "id": 123074394,
+            "issueNumber": 354,
+            "reason": "9",
+            "time": 1689552507661
+        },
+        {
+            "id": 140794505,
+            "issueNumber": 429,
+            "reason": "Revised some table annotations. Otimized the route direction. Added stations in the rear section of Line 4.",
+            "time": 1691246930197
+        }
+    ]
+}
