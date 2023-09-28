@@ -1,0 +1,936 @@
+{
+    "svgWidth": {
+        "destination": 1800,
+        "runin": 1200,
+        "railmap": 3000,
+        "indoor": 2500
+    },
+    "svg_height": 450,
+    "style": "mtr",
+    "y_pc": 38,
+    "padding": 3,
+    "direction": "r",
+    "platform_num": "1",
+    "theme": [
+        "taipei",
+        "g",
+        "#008659",
+        "#fff"
+    ],
+    "line_name": [
+        "松山新店線",
+        "Songshan-Xindian Line"
+    ],
+    "current_stn_idx": "NMOmdQ",
+    "stn_list": {
+        "linestart": {
+            "name": [
+                "RIGHT END",
+                "RIGHT END"
+            ],
+            "secondaryName": false,
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [],
+            "children": [
+                "NMOmdQ"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": []
+                    }
+                ]
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 355
+        },
+        "wGQTlW": {
+            "name": [
+                "新店",
+                "Xindian"
+            ],
+            "secondaryName": false,
+            "num": "01",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "MxrQsZ"
+            ],
+            "children": [
+                "lineend"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": []
+                    }
+                ]
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 355
+        },
+        "MxrQsZ": {
+            "name": [
+                "新店區公所",
+                "Xindian District Office"
+            ],
+            "secondaryName": false,
+            "num": "02",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "YCWJ5B"
+            ],
+            "children": [
+                "wGQTlW"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": []
+                    }
+                ]
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 355
+        },
+        "lineend": {
+            "name": [
+                "LEFT END",
+                "LEFT END"
+            ],
+            "secondaryName": false,
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "wGQTlW",
+                "K3ZDFl"
+            ],
+            "children": [],
+            "branch": {
+                "left": [
+                    "through",
+                    "K3ZDFl"
+                ],
+                "right": []
+            },
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": []
+                    }
+                ]
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 355
+        },
+        "NMOmdQ": {
+            "name": [
+                "松山",
+                "Songshan"
+            ],
+            "secondaryName": false,
+            "num": "19",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "linestart"
+            ],
+            "children": [
+                "lWBWuu"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": []
+                    }
+                ]
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 355
+        },
+        "lWBWuu": {
+            "name": [
+                "南京三民",
+                "Nanjing Sanmin"
+            ],
+            "secondaryName": false,
+            "num": "18",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "NMOmdQ"
+            ],
+            "children": [
+                "1dDjfp"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": []
+                    }
+                ]
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 355
+        },
+        "1dDjfp": {
+            "name": [
+                "台北小巨蛋",
+                "Taipei Arena"
+            ],
+            "secondaryName": false,
+            "num": "17",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "lWBWuu"
+            ],
+            "children": [
+                "8OiUML"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": []
+                    }
+                ]
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 355
+        },
+        "8OiUML": {
+            "name": [
+                "南京復興",
+                "Nanjing Fuxing"
+            ],
+            "secondaryName": false,
+            "num": "16",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "1dDjfp"
+            ],
+            "children": [
+                "rP5Jar"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": [
+                            {
+                                "theme": [
+                                    "taipei",
+                                    "br",
+                                    "#c48c31",
+                                    "#fff"
+                                ],
+                                "name": [
+                                    "文湖線",
+                                    "Wenhu Line"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 355
+        },
+        "rP5Jar": {
+            "name": [
+                "松江南京",
+                "Songjiang Nanjing"
+            ],
+            "secondaryName": false,
+            "num": "15",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "8OiUML"
+            ],
+            "children": [
+                "p0nZDd"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": [
+                            {
+                                "theme": [
+                                    "other",
+                                    "other",
+                                    "#f8b61c",
+                                    "#000"
+                                ],
+                                "name": [
+                                    "中和新蘆線",
+                                    "Zhonghe-Xinlu Line"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 355
+        },
+        "p0nZDd": {
+            "name": [
+                "中山",
+                "Zhongshan"
+            ],
+            "secondaryName": false,
+            "num": "14",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "rP5Jar"
+            ],
+            "children": [
+                "Rnhblk"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": [
+                            {
+                                "theme": [
+                                    "taipei",
+                                    "r",
+                                    "#e3002c",
+                                    "#fff"
+                                ],
+                                "name": [
+                                    "淡水信義線",
+                                    "Tamsui-Xinyi Line"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 355
+        },
+        "Rnhblk": {
+            "name": [
+                "北門",
+                "Beimen"
+            ],
+            "secondaryName": false,
+            "num": "13",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "p0nZDd"
+            ],
+            "children": [
+                "HObPTv"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": []
+                    },
+                    {
+                        "lines": [
+                            {
+                                "theme": [
+                                    "taipei",
+                                    "bl",
+                                    "#0070bd",
+                                    "#fff"
+                                ],
+                                "name": [
+                                    "板南線",
+                                    "Bannan Line"
+                                ]
+                            },
+                            {
+                                "theme": [
+                                    "taipei",
+                                    "r",
+                                    "#e3002c",
+                                    "#fff"
+                                ],
+                                "name": [
+                                    "淡水信義線",
+                                    "Tansui-Xinyi Line"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "lines": [
+                            {
+                                "theme": [
+                                    "other",
+                                    "other",
+                                    "#8147ae",
+                                    "#fff"
+                                ],
+                                "name": [
+                                    "桃園機場捷運",
+                                    "Taoyuan Airport MRT"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 355
+        },
+        "HObPTv": {
+            "name": [
+                "西門",
+                "Ximen"
+            ],
+            "secondaryName": false,
+            "num": "12",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "Rnhblk"
+            ],
+            "children": [
+                "dK_G_5"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": [
+                            {
+                                "theme": [
+                                    "taipei",
+                                    "bl",
+                                    "#0070bd",
+                                    "#fff"
+                                ],
+                                "name": [
+                                    "板南線",
+                                    "Bannan Line"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 355
+        },
+        "dK_G_5": {
+            "name": [
+                "小南門",
+                "Xiaonanmen"
+            ],
+            "secondaryName": false,
+            "num": "11",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "HObPTv"
+            ],
+            "children": [
+                "PM0xEw"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": []
+                    }
+                ]
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 355
+        },
+        "PM0xEw": {
+            "name": [
+                "中正紀念堂",
+                "Chiang Kai-Shek Memorial Hall"
+            ],
+            "secondaryName": false,
+            "num": "10",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "dK_G_5"
+            ],
+            "children": [
+                "e0i6Pl"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": [
+                            {
+                                "theme": [
+                                    "taipei",
+                                    "r",
+                                    "#e3002c",
+                                    "#fff"
+                                ],
+                                "name": [
+                                    "淡水信義線",
+                                    "Tamsui-Xinyi Line"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 355
+        },
+        "Pdwu4d": {
+            "name": [
+                "台電大樓",
+                "Taipower Building"
+            ],
+            "secondaryName": false,
+            "num": "08",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "e0i6Pl"
+            ],
+            "children": [
+                "FWuBc9"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": []
+                    }
+                ]
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 355
+        },
+        "FWuBc9": {
+            "name": [
+                "公館",
+                "Gongguan"
+            ],
+            "secondaryName": false,
+            "num": "07",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "Pdwu4d"
+            ],
+            "children": [
+                "6hPsDq"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": []
+                    }
+                ]
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 355
+        },
+        "6hPsDq": {
+            "name": [
+                "萬隆",
+                "Wanlong"
+            ],
+            "secondaryName": false,
+            "num": "06",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "FWuBc9"
+            ],
+            "children": [
+                "dr_C0C"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": []
+                    }
+                ]
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 355
+        },
+        "dr_C0C": {
+            "name": [
+                "景美",
+                "Jingmei"
+            ],
+            "secondaryName": false,
+            "num": "05",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "6hPsDq"
+            ],
+            "children": [
+                "1S22Em"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": []
+                    }
+                ]
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 355
+        },
+        "1S22Em": {
+            "name": [
+                "大坪林",
+                "Dapinglin"
+            ],
+            "secondaryName": false,
+            "num": "04",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "dr_C0C"
+            ],
+            "children": [
+                "YCWJ5B"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": [
+                            {
+                                "theme": [
+                                    "other",
+                                    "other",
+                                    "#fedb00",
+                                    "#000"
+                                ],
+                                "name": [
+                                    "環狀缐",
+                                    "Circular Line"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 355
+        },
+        "YCWJ5B": {
+            "name": [
+                "七張",
+                "Qizhang"
+            ],
+            "secondaryName": false,
+            "num": "03",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "1S22Em"
+            ],
+            "children": [
+                "MxrQsZ",
+                "K3ZDFl"
+            ],
+            "branch": {
+                "left": [],
+                "right": [
+                    "through",
+                    "K3ZDFl"
+                ]
+            },
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": []
+                    }
+                ]
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 355
+        },
+        "e0i6Pl": {
+            "name": [
+                "古亭",
+                "Guting"
+            ],
+            "secondaryName": false,
+            "num": "09",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "PM0xEw"
+            ],
+            "children": [
+                "Pdwu4d"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": [
+                            {
+                                "theme": [
+                                    "other",
+                                    "other",
+                                    "#f8b61c",
+                                    "#000"
+                                ],
+                                "name": [
+                                    "中和新蘆線",
+                                    "Zhonghe-Xinlu Line"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "K3ZDFl": {
+            "name": [
+                "小碧潭",
+                "Xiaobitan"
+            ],
+            "secondaryName": false,
+            "num": "03A",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "YCWJ5B"
+            ],
+            "children": [
+                "lineend"
+            ],
+            "branch": {
+                "left": [],
+                "right": []
+            },
+            "transfer": {
+                "groups": [
+                    {
+                        "lines": []
+                    }
+                ],
+                "tick_direc": "r",
+                "paid_area": true
+            },
+            "facility": "",
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        }
+    },
+    "namePosMTR": {
+        "isStagger": true,
+        "isFlip": true
+    },
+    "customiseMTRDest": {
+        "isLegacy": false,
+        "terminal": false
+    },
+    "line_num": "G",
+    "psd_num": "1",
+    "info_panel_type": "gz1",
+    "notesGZMTR": [],
+    "direction_gz_x": 40,
+    "direction_gz_y": 70,
+    "coline": {},
+    "loop": false,
+    "loop_info": {
+        "bank": true,
+        "left_and_right_factor": 0,
+        "bottom_factor": 1
+    },
+    "branchSpacingPct": 30
+}
