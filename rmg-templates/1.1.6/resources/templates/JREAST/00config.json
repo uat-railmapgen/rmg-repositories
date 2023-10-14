@@ -1,0 +1,42 @@
+[
+    {
+        "filename": "JK",
+        "name": {
+            "en": "Keihin–Tōhoku Line",
+            "zh-Hans": "京滨东北线",
+            "zh-Hant": "京濱東北線",
+            "ja": "京浜東北線"
+        },
+        "uploadBy": "Takagi-Misae"
+    },
+    {
+        "filename": "JY",
+        "name": {
+            "en": "Yamanote Line",
+            "zh-Hans": "山手线",
+            "zh-Hant": "山手線",
+            "ja": "山手線"
+        },
+        "uploadBy": "Takagi-Misae"
+    },
+    {
+        "filename": "Kawagoe Line",
+        "name": {
+            "en": "Kawagoe Line",
+            "zh-Hans": "川越线",
+            "zh-Hant": "川越線",
+            "ja": "川越線"
+        },
+        "uploadBy": "Charlis-Wong"
+    },
+    {
+        "filename": "Hachiko Line",
+        "name": {
+            "en": "Hachiko Line",
+            "zh-Hans": "八高线",
+            "zh-Hant": "八高線",
+            "ja": "八高線"
+        },
+        "uploadBy": "Charlis-Wong"
+    }
+]

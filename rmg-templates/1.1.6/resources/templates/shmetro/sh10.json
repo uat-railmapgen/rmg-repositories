@@ -1,0 +1,1319 @@
+{
+    "style": "shmetro",
+    "svg_height": 450,
+    "padding": 3,
+    "y_pc": 40,
+    "theme": [
+        "shanghai",
+        "sh10",
+        "#C6AFD4",
+        "#000"
+    ],
+    "direction": "l",
+    "current_stn_idx": "39k5",
+    "platform_num": "",
+    "stn_list": {
+        "linestart": {
+            "parents": [],
+            "children": [
+                "8elh",
+                "l1mz"
+            ],
+            "name": [
+                "路綫左端",
+                "LEFT END"
+            ],
+            "branch": {
+                "right": [
+                    "through",
+                    "8elh"
+                ]
+            },
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {}
+                ]
+            },
+            "services": [
+                "local"
+            ],
+            "num": "00",
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "lineend": {
+            "parents": [
+                "iwf6"
+            ],
+            "children": [],
+            "name": [
+                "路綫右端",
+                "RIGHT END"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {}
+                ]
+            },
+            "services": [
+                "local"
+            ],
+            "num": "00",
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "l1mz": {
+            "parents": [
+                "linestart"
+            ],
+            "children": [
+                "qua1"
+            ],
+            "name": [
+                "航中路",
+                "Hangzhong Road"
+            ],
+            "num": "02",
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {}
+                ]
+            },
+            "services": [
+                "local"
+            ],
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 355
+        },
+        "iwf6": {
+            "children": [
+                "lineend"
+            ],
+            "parents": [
+                "235e"
+            ],
+            "name": [
+                "基隆路",
+                "Jilong Road"
+            ],
+            "num": "01",
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {}
+                ]
+            },
+            "services": [
+                "local"
+            ],
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "235e": {
+            "name": [
+                "港城路",
+                "Gangcheng Road"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "z5mf"
+            ],
+            "children": [
+                "iwf6"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": [
+                            {
+                                "theme": [
+                                    "shanghai",
+                                    "sh6",
+                                    "#D40068",
+                                    "#fff"
+                                ],
+                                "name": [
+                                    "6号线",
+                                    "Line 6"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "z5mf": {
+            "name": [
+                "高桥",
+                "Gaoqiao"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "cqz1"
+            ],
+            "children": [
+                "235e"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {}
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "cqz1": {
+            "name": [
+                "高桥西",
+                "West Gaoqiao"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "j3bx"
+            ],
+            "children": [
+                "z5mf"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {}
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "j3bx": {
+            "name": [
+                "双江路",
+                "Shuangjiang Road"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "n2ay"
+            ],
+            "children": [
+                "cqz1"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {}
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "n2ay": {
+            "name": [
+                "国帆路",
+                "Guofan Road"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "x4kz"
+            ],
+            "children": [
+                "j3bx"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {}
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "x4kz": {
+            "name": [
+                "新江湾城",
+                "Xinjiangwancheng"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "pa31"
+            ],
+            "children": [
+                "n2ay"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {}
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "pa31": {
+            "name": [
+                "殷高东路",
+                "East Yingao Road"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "4nf6"
+            ],
+            "children": [
+                "x4kz"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {}
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "4nf6": {
+            "name": [
+                "三门路",
+                "Sanmen Road"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "jv50"
+            ],
+            "children": [
+                "pa31"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {}
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "jv50": {
+            "name": [
+                "江湾体育场",
+                "Jiangwan Stadium"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "j2qt"
+            ],
+            "children": [
+                "4nf6"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {}
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "j2qt": {
+            "name": [
+                "五角场",
+                "Wujiaochang"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "nhio"
+            ],
+            "children": [
+                "jv50"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {}
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "nhio": {
+            "name": [
+                "国权路",
+                "Guoquan Road"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "jiq4"
+            ],
+            "children": [
+                "j2qt"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": [
+                            {
+                                "theme": [
+                                    "shanghai",
+                                    "sh18",
+                                    "#C4984F",
+                                    "#000"
+                                ],
+                                "name": [
+                                    "18号线",
+                                    "Line 18"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "jiq4": {
+            "name": [
+                "同济大学",
+                "Tongji University"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "5uq1"
+            ],
+            "children": [
+                "nhio"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {}
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "5uq1": {
+            "name": [
+                "四平路",
+                "Siping Road"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "xmdd"
+            ],
+            "children": [
+                "jiq4"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": [
+                            {
+                                "theme": [
+                                    "shanghai",
+                                    "sh8",
+                                    "#0094D8",
+                                    "#fff"
+                                ],
+                                "name": [
+                                    "8号线",
+                                    "Line 8"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "xmdd": {
+            "name": [
+                "邮电新村",
+                "Youdian Xincun"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "9l56"
+            ],
+            "children": [
+                "5uq1"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {}
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "9l56": {
+            "name": [
+                "海伦路",
+                "Hailun Road"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "uzwc"
+            ],
+            "children": [
+                "xmdd"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": [
+                            {
+                                "theme": [
+                                    "shanghai",
+                                    "sh4",
+                                    "#461D84",
+                                    "#fff"
+                                ],
+                                "name": [
+                                    "4号线",
+                                    "Line 4"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "uzwc": {
+            "name": [
+                "四川北路",
+                "North Sichuan Road"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "c9cn"
+            ],
+            "children": [
+                "9l56"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {}
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "c9cn": {
+            "name": [
+                "天潼路",
+                "Tiantong Road"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "21qj"
+            ],
+            "children": [
+                "uzwc"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": [
+                            {
+                                "theme": [
+                                    "shanghai",
+                                    "sh12",
+                                    "#007A60",
+                                    "#fff"
+                                ],
+                                "name": [
+                                    "12号线",
+                                    "Line 12"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "21qj": {
+            "name": [
+                "南京东路",
+                "East Nanjing Road"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "otr5"
+            ],
+            "children": [
+                "c9cn"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": [
+                            {
+                                "theme": [
+                                    "shanghai",
+                                    "sh2",
+                                    "#82BF25",
+                                    "#000"
+                                ],
+                                "name": [
+                                    "2号线",
+                                    "Line 2"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "otr5": {
+            "name": [
+                "豫园",
+                "Yuyuan Garden"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "s5gw"
+            ],
+            "children": [
+                "21qj"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": [
+                            {
+                                "theme": [
+                                    "shanghai",
+                                    "sh14",
+                                    "#626020",
+                                    "#fff"
+                                ],
+                                "name": [
+                                    "14号线",
+                                    "Line 14"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "s5gw": {
+            "name": [
+                "老西门",
+                "Laoximen"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "35wr"
+            ],
+            "children": [
+                "otr5"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": [
+                            {
+                                "theme": [
+                                    "shanghai",
+                                    "sh8",
+                                    "#0094D8",
+                                    "#fff"
+                                ],
+                                "name": [
+                                    "8号线",
+                                    "Line 8"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "35wr": {
+            "name": [
+                "一大会址·新天地",
+                "Site of the First CPC\\National Congress · Xintiandi"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "r2iv"
+            ],
+            "children": [
+                "s5gw"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": [
+                            {
+                                "theme": [
+                                    "shanghai",
+                                    "sh13",
+                                    "#E999C0",
+                                    "#000"
+                                ],
+                                "name": [
+                                    "13号线",
+                                    "Line 13"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "r2iv": {
+            "name": [
+                "陕西南路",
+                "South Shaanxi Road"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "1izj"
+            ],
+            "children": [
+                "35wr"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": [
+                            {
+                                "theme": [
+                                    "shanghai",
+                                    "sh1",
+                                    "#E3002B",
+                                    "#fff"
+                                ],
+                                "name": [
+                                    "1号线",
+                                    "Line 1"
+                                ]
+                            },
+                            {
+                                "theme": [
+                                    "shanghai",
+                                    "sh12",
+                                    "#007A60",
+                                    "#fff"
+                                ],
+                                "name": [
+                                    "12号线",
+                                    "Line 12"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "1izj": {
+            "name": [
+                "上海图书馆",
+                "Shanghai Library"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "vq27"
+            ],
+            "children": [
+                "r2iv"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {}
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "vq27": {
+            "name": [
+                "交通大学",
+                "Jiao Tong University"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "dnhi"
+            ],
+            "children": [
+                "1izj"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": [
+                            {
+                                "theme": [
+                                    "shanghai",
+                                    "sh11",
+                                    "#871C2B",
+                                    "#fff"
+                                ],
+                                "name": [
+                                    "11号线",
+                                    "Line 11"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "dnhi": {
+            "name": [
+                "虹桥路",
+                "Hongqiao Road"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "pdin"
+            ],
+            "children": [
+                "vq27"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": [
+                            {
+                                "theme": [
+                                    "shanghai",
+                                    "sh3",
+                                    "#FCD600",
+                                    "#000"
+                                ],
+                                "name": [
+                                    "3号线",
+                                    "Line 3"
+                                ]
+                            },
+                            {
+                                "theme": [
+                                    "shanghai",
+                                    "sh4",
+                                    "#461D84",
+                                    "#fff"
+                                ],
+                                "name": [
+                                    "4号线",
+                                    "Line 4"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "pdin": {
+            "name": [
+                "宋园路",
+                "Songyuan Road"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "3p4h"
+            ],
+            "children": [
+                "dnhi"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {}
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "3p4h": {
+            "name": [
+                "伊犁路",
+                "Yili Road"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "xu0h"
+            ],
+            "children": [
+                "pdin"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {}
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "xu0h": {
+            "name": [
+                "水城路",
+                "Shuicheng Road"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "39k5"
+            ],
+            "children": [
+                "3p4h"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {}
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "39k5": {
+            "name": [
+                "龙溪路",
+                "Longxi Road"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "cgz8",
+                "mb2s"
+            ],
+            "children": [
+                "xu0h"
+            ],
+            "branch": {
+                "left": [
+                    "through",
+                    "cgz8"
+                ]
+            },
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {}
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": true,
+            "int_padding": 355
+        },
+        "mb2s": {
+            "name": [
+                "龙柏新村",
+                "Longbai Xincun"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "qua1"
+            ],
+            "children": [
+                "39k5"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {}
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 355
+        },
+        "qua1": {
+            "name": [
+                "紫藤路",
+                "Ziteng Road"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "l1mz"
+            ],
+            "children": [
+                "mb2s"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {}
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 355
+        },
+        "cgz8": {
+            "name": [
+                "上海动物园",
+                "Shanghai Zoo"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "jgng"
+            ],
+            "children": [
+                "39k5"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {}
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 355
+        },
+        "jgng": {
+            "name": [
+                "虹桥一号航站楼",
+                "Hongqiao Airport Terminal 1"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "4h0t"
+            ],
+            "children": [
+                "cgz8"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {}
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 355
+        },
+        "4h0t": {
+            "name": [
+                "虹桥二号航站楼",
+                "Hongqiao Airport Terminal 2"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "8elh"
+            ],
+            "children": [
+                "jgng"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": [
+                            {
+                                "theme": [
+                                    "shanghai",
+                                    "sh2",
+                                    "#82BF25",
+                                    "#000"
+                                ],
+                                "name": [
+                                    "2号线",
+                                    "Line 2"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 200
+        },
+        "8elh": {
+            "name": [
+                "虹桥火车站",
+                "Hongqiao Railway Station"
+            ],
+            "num": "00",
+            "services": [
+                "local"
+            ],
+            "parents": [
+                "linestart"
+            ],
+            "children": [
+                "4h0t"
+            ],
+            "transfer": {
+                "tick_direc": "r",
+                "paid_area": true,
+                "groups": [
+                    {
+                        "lines": [
+                            {
+                                "theme": [
+                                    "shanghai",
+                                    "sh2",
+                                    "#82BF25",
+                                    "#000"
+                                ],
+                                "name": [
+                                    "2号线",
+                                    "Line 2"
+                                ]
+                            },
+                            {
+                                "theme": [
+                                    "shanghai",
+                                    "sh17",
+                                    "#BC796F",
+                                    "#fff"
+                                ],
+                                "name": [
+                                    "17号线",
+                                    "Line 17"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "loop_pivot": false,
+            "one_line": false,
+            "int_padding": 200
+        }
+    },
+    "line_name": [
+        "10号线",
+        "Line10"
+    ],
+    "psd_num": "1",
+    "line_num": "10",
+    "info_panel_type": "sh",
+    "direction_gz_x": 50,
+    "direction_gz_y": 70,
+    "customiseMTRDest": {
+        "isLegacy": false,
+        "terminal": false
+    },
+    "svgWidth": {
+        "destination": 1500,
+        "runin": 1500,
+        "railmap": 2500,
+        "indoor": 3200
+    },
+    "namePosMTR": {
+        "isStagger": true,
+        "isFlip": true
+    },
+    "coline": {},
+    "loop": false,
+    "loop_info": {
+        "bank": true,
+        "left_and_right_factor": 0,
+        "bottom_factor": 1
+    },
+    "branchSpacingPct": 33,
+    "version": "5.14.12"
+}
