@@ -23,8 +23,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-
       - name: Configure Git
         run: |
           git config --global user.name 'github-actions[bot]'
@@ -32,14 +30,52 @@ jobs:
 
       - name: Prepare PRD repo
         run: |
-          if [ ${{ github.event.inputs.app_name }} == 'railmapgen.github.io' ]
+          if [ ${{ inputs.app_name }} == 'railmapgen.github.io' ]
           then
             git clone https://chitowong:${{ secrets.GITLAB_RELEASE }}@gitlab.com/railmapgen/railmapgen.gitlab.io.git GITLAB_REPO/
           else
-            git clone https://chitowong:${{ secrets.GITLAB_RELEASE }}@gitlab.com/railmapgen/${{ github.event.inputs.app_name }}.git GITLAB_REPO/
+            git clone https://chitowong:${{ secrets.GITLAB_RELEASE }}@gitlab.com/railmapgen/${{ inputs.app_name }}.git GITLAB_REPO/
           fi
 
       - name: Release
+        shell: bash
         run: |
-          chmod +x ./release-gitlab.sh
-          ./release-gitlab.sh ${{ github.event.inputs.app_name }} ${{ github.event.inputs.version }}
+          set -eux
+
+          # Clear artefact folder
+          cd GITLAB_REPO/
+          rm -rf public
+          mkdir public
+          cd ..
+
+          # Download artefacts
+          curl -o dist.tar.gz -L https://github.com/uat-railmapgen/rmg-repositories/raw/main/${{ inputs.app_name }}/${{ inputs.version }}.tar.gz
+          tar -xvf dist.tar.gz -C GITLAB_REPO/public/
+
+          # Write INFO.JSON
+          cat >public/info.json <<EOF
+          {
+            "component": "$1",
+            "version": "$2",
+            "environment": "PRD",
+            "instance": "GitLab"
+          }
+          EOF
+          
+          # Write .gitlab-ci.yml
+          cat >.gitlab-ci.yml <<EOF
+          pages:
+            stage: deploy
+            script:
+              - echo "Do nothing"
+            artifacts:
+              paths:
+                - public
+            only:
+              - main
+          EOF
+          
+          # Push
+          git add .
+          git commit -m "Release version ${{ inputs.version }} to GitLab"
+          git push
