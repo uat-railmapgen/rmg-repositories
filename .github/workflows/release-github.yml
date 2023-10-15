@@ -1,4 +1,4 @@
-name: Release TAR
+name: Release to GitHub
 
 on:
   workflow_call:
@@ -99,10 +99,3 @@ jobs:
           git commit -m "Release version ${{ inputs.version }} to ${{ inputs.environment }}"
           git push -u origin gh-pages
 
-  release-gitlab:
-    if: ${{ inputs.environment == 'PRD' }}
-    uses: uat-railmapgen/rmg-repositories/.github/workflows/release-gitlab.yml@main
-    with: 
-      app_name: ${{ inputs.app_name }}
-      version: ${{ inputs.version }}
-    secrets: inherit
