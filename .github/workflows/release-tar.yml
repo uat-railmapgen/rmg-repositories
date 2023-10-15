@@ -76,7 +76,7 @@ jobs:
           rm -rf target/*
           
           # Download artifacts
-          curl -o dist.tar.gz -L https://github.com/uat-railmapgen/rmg-repositories/raw/main/$APP_NAME/$VERSION.tar.gz
+          curl -o dist.tar.gz -L https://github.com/uat-railmapgen/rmg-repositories/raw/main/${{ inputs.app_name }}/${{ inputs.version }}.tar.gz
           tar -xvf dist.tar.gz -C target/
           
           # Bypass JEKYLL
@@ -85,9 +85,9 @@ jobs:
           # Write INFO.JSON
           cat >target/info.json <<EOF
           {
-            "component": "$APP_NAME",
-            "version": "$VERSION",
-            "environment": "$ENV",
+            "component": "${{ inputs.app_name }}",
+            "version": "${{ inputs.version }}",
+            "environment": "${{ inputs.environment }}",
             "instance": "GitHub"
           }
           EOF
@@ -95,7 +95,7 @@ jobs:
           # Push
           cd target
           git add .
-          git commit -m "Release version $VERSION to $ENV"
+          git commit -m "Release version ${{ inputs.version }} to ${{ inputs.environment }}"
           git push -u origin gh-pages
 
       - name: Release to other mirrors
