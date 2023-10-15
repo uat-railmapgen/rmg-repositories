@@ -1,0 +1,29 @@
+name: Migrate TAR
+
+on:
+  workflow_dispatch:
+    inputs:
+      app_name:
+        type: string
+        required: true
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Configure Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Migrate
+        run: |
+          cd ${{ inputs.app_name }}
+          for v in */; do
+            VERSION=$(echo $v | cut -d/ -f1)
+            tar -czvf "$VERSION$.tar.gz --directory "$VERSION" .
+          done
+
+          git status
