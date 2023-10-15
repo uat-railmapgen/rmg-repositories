@@ -101,7 +101,7 @@ jobs:
 
       - name: Release to other mirrors
         if: ${{ inputs.environment == 'PRD' }}
-        uses: uat-railmapgen/rmg-repositories/.github/workflows/release-gitlab.yml
+        uses: uat-railmapgen/rmg-repositories/.github/workflows/release-gitlab.yml@main
         with: 
           app_name: ${{ inputs.app_name }}
           version: ${{ inputs.version }}
