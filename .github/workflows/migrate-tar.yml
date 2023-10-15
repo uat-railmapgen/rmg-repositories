@@ -29,7 +29,7 @@ jobs:
 
           count=0
           for v in ${{ inputs.starts_with }}*/; do
-            if [ $count = ${{ inputs.limit }} ] then
+            if [ $count = ${{ inputs.limit }} ]; then
               break
             fi
           
