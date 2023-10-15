@@ -28,4 +28,7 @@ jobs:
           done
 
           ls -la
-          git status
+
+          git add .
+          git commit -m "Migrate ${{ inputs.app_name }} to tar.gz"
+          git push
