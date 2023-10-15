@@ -51,6 +51,7 @@ jobs:
           # Download artefacts
           curl -o dist.tar.gz -L https://github.com/uat-railmapgen/rmg-repositories/raw/main/${{ inputs.app_name }}/${{ inputs.version }}.tar.gz
           tar -xvf dist.tar.gz -C GITLAB_REPO/public/
+          cd GITLAB_REPO/
 
           # Write INFO.JSON
           cat >public/info.json <<EOF
