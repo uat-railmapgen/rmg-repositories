@@ -6,6 +6,8 @@ on:
       app_name:
         type: string
         required: true
+      starts_with:
+        type: string
 
 jobs:
   migrate:
@@ -22,7 +24,7 @@ jobs:
         run: |
           set -eux
           cd ${{ inputs.app_name }}
-          for v in */; do
+          for v in ${{ inputs.starts_with }}*/; do
             VERSION=$(echo $v | cut -d/ -f1)
             tar -czvf "$VERSION".tar.gz --directory "$VERSION" .
             rm -rf ./"$VERSION"/
