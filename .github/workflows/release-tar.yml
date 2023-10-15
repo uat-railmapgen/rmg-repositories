@@ -33,30 +33,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Configure Git
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-
-      - name: Prepare UAT repo
-        if: ${{ github.event.inputs.environment == 'UAT' }}
-        run: |
-          if [ ${{ github.event.inputs.app_name }} == 'railmapgen.github.io' ]
-          then
-            git clone https://wongchito:${{ secrets.RMG_BUILD_AND_RELEASE }}@github.com/uat-railmapgen/uat-railmapgen.github.io.git TARGET_REPO/
-          else
-            git clone https://wongchito:${{ secrets.RMG_BUILD_AND_RELEASE }}@github.com/uat-railmapgen/${{ github.event.inputs.app_name }}.git TARGET_REPO/
-          fi
-
-      - name: Prepare PRD repo
-        if: ${{ github.event.inputs.environment == 'PRD' }}
-        run: |
-          git clone https://wongchito:${{ secrets.RMG_BUILD_AND_RELEASE }}@github.com/railmapgen/${{ github.event.inputs.app_name }}.git TARGET_REPO/
-
       - name: Release
-        run: |
-          chmod +x ./release-tar.sh
-          ./release.sh ${{ github.event.inputs.app_name }} ${{ github.event.inputs.version }} ${{ github.event.inputs.environment }}
+        uses: railmapgen/releaser@main
+        with:
+          app_name: ${{ inputs.app_name }}
+          version: ${{ inputs.version }}
+          env: ${{ inputs.environment }}
 
       - name: Release to other mirrors
         if: ${{ github.event.inputs.environment == 'PRD' }}
