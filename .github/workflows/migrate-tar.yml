@@ -8,6 +8,8 @@ on:
         required: true
       starts_with:
         type: string
+      limit:
+        type: number
 
 jobs:
   migrate:
@@ -24,10 +26,18 @@ jobs:
         run: |
           set -eux
           cd ${{ inputs.app_name }}
+
+          count=0
           for v in ${{ inputs.starts_with }}*/; do
+            if [ $count = ${{ inputs.limit }} ] then
+              break
+            fi
+          
             VERSION=$(echo $v | cut -d/ -f1)
             tar -czvf "$VERSION".tar.gz --directory "$VERSION" .
             rm -rf ./"$VERSION"/
+
+            (( count += 1 ))
           done
 
           ls -la
