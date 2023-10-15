@@ -33,13 +33,70 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Release
-        uses: railmapgen/releaser@main
+      - name: Parse org and repo
+        shell: bash
+        run: |
+          if [ ${{ inputs.environment }} == 'PRD' ]
+          then
+            echo "org=railmapgen" >> "$GITHUB_ENV"
+            echo "repo=${{ inputs.app_name }}" >> "$GITHUB_ENV"
+          else
+            echo "org=uat-railmapgen" >> "$GITHUB_ENV"
+            if [ ${{ inputs.app_name }} == 'railmapgen.github.io' ]
+            then
+              echo "repo=uat-railmapgen.github.io" >> "$GITHUB_ENV"
+            else
+              echo "repo=${{ inputs.app_name }}" >> "$GITHUB_ENV"
+            fi
+          fi
+
+      - name: Checkout target repo
+        uses: actions/checkout@v3
         with:
-          app_name: ${{ inputs.app_name }}
-          version: ${{ inputs.version }}
-          env: ${{ inputs.environment }}
+          repository: ${{ env.org }}/${{ env.repo }}
+          path: target
           token: ${{ secrets.RMG_BUILD_AND_RELEASE }}
+
+      - name: Git config
+        shell: bash
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          
+      - name: Release
+        shell: bash
+        run: |
+          set -eux
+          # Checkout to gh-pages branch
+          cd target/
+          { git checkout gh-pages; } || { git checkout -b gh-pages; }
+          
+          # Clear folder
+          cd ..
+          rm -rf target/*
+          
+          # Download artifacts
+          curl -o dist.tar.gz -L https://github.com/uat-railmapgen/rmg-repositories/raw/main/$APP_NAME/$VERSION.tar.gz
+          tar -xvf dist.tar.gz -C target/
+          
+          # Bypass JEKYLL
+          touch target/.nojekyll
+          
+          # Write INFO.JSON
+          cat >target/info.json <<EOF
+          {
+            "component": "$APP_NAME",
+            "version": "$VERSION",
+            "environment": "$ENV",
+            "instance": "GitHub"
+          }
+          EOF
+          
+          # Push
+          cd target
+          git add .
+          git commit -m "Release version $VERSION to $ENV"
+          git push -u origin gh-pages
 
       - name: Release to other mirrors
         if: ${{ github.event.inputs.environment == 'PRD' }}
@@ -49,8 +106,3 @@ jobs:
             -H "Content-Type: application/json" \
             https://api.github.com/repos/uat-railmapgen/rmg-repositories/actions/workflows/release-gitlab.yml/dispatches \
             --data '{"ref": "main", "inputs": {"app_name": "${{ github.event.inputs.app_name }}", "version": "${{ github.event.inputs.version }}"}}'
-          # curl -XPOST -u "wongchito:${{ secrets.RMG_BUILD_AND_RELEASE }}" \
-          #   -H "Accept: application/vnd.github.everest-preview+json" \
-          #   -H "Content-Type: application/json" \
-          #   https://api.github.com/repos/uat-railmapgen/rmg-repositories/actions/workflows/release-bitbucket.yml/dispatches \
-          #   --data '{"ref": "main", "inputs": {"app_name": "${{ github.event.inputs.app_name }}", "version": "${{ github.event.inputs.version }}"}}'
