@@ -105,3 +105,4 @@ jobs:
     with: 
       app_name: ${{ inputs.app_name }}
       version: ${{ inputs.version }}
+    secrets: inherit
