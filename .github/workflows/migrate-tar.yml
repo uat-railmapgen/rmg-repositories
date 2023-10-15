@@ -23,7 +23,9 @@ jobs:
           cd ${{ inputs.app_name }}
           for v in */; do
             VERSION=$(echo $v | cut -d/ -f1)
-            tar -czvf "$VERSION$.tar.gz --directory "$VERSION" .
+            tar -czvf "$VERSION".tar.gz --directory "$VERSION" .
+            rm -rf ./"$VERSION"/
           done
 
+          ls -la
           git status
