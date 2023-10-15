@@ -39,6 +39,7 @@ jobs:
           app_name: ${{ inputs.app_name }}
           version: ${{ inputs.version }}
           env: ${{ inputs.environment }}
+          token: ${{ secrets.RMG_BUILD_AND_RELEASE }}
 
       - name: Release to other mirrors
         if: ${{ github.event.inputs.environment == 'PRD' }}
