@@ -77,7 +77,7 @@ jobs:
           rm -rf target/*
           
           # Download artifacts
-          curl -o dist.tar.gz -L https://github.com/uat-railmapgen/rmg-repositories/raw/main/${{ inputs.app_name }}/${{ inputs.version }}.tar.gz
+          curl -o dist.tar.gz "$(echo 'https://github.com/uat-railmapgen/rmg-repositories/raw/main/${{ inputs.app_name }}/${{ inputs.version }}.tar.gz' | sed 's/#/%23/g')" -L
           tar -xvf dist.tar.gz -C target/
           
           # Bypass JEKYLL
